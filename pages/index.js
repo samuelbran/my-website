@@ -1,65 +1,88 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Image from 'next/image'
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <main>
+      <div className="container mx-auto">
+        <div className="p-8 md:p-12">
+          <h2 className="text-3xl leading-10">
+            Hi! I'm a{' '}
+            <span className="px-2 bg-yellow-100">Front End Developer</span>{' '}
+            based in El Salvador, I've been working in the web for more that 6
+            years and have experience with React, Vue, Ruby on Rails, WordPress
+            and a bunch of libraries around them.
+          </h2>
         </div>
-      </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+        <div className="p-8">
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="p-4 bg-green-50">
+              <h3 className="text-xl">
+                Current status: <br />
+                <a
+                  href="https://www.linkedin.com/in/samuelbran/"
+                  target="_blank"
+                  className="font-bold underline hover:text-indigo-500"
+                >
+                  Looking to join a new team.
+                </a>
+              </h3>
+            </div>
+            <div className="flex flex-wrap content-center p-4 bg-blue-50">
+              <p>Today learning: Tailwind CSS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-gray-50">
+        <div className="container p-8 mx-auto md:p-12">
+          <h3 className="text-xl">Tools I use everyday:</h3>
+          <br />
+          <ul className="pl-4 list-disc">
+            <li>Alacritty</li>
+            <li>Neovim</li>
+            <li>Git</li>
+            <li>Figma</li>
+            <li>Notion</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="container p-8 mx-auto md:p-12">
+        <h3 className="text-xl">Things I like to do on my free time:</h3>
+        <br />
+        <ul className="pl-3 list-disc">
+          <li>
+            Hiking - I'm an active member of{' '}
+            <a
+              target="_blank"
+              className="underline hover:text-gray-500"
+              href="https://www.facebook.com/FSME.SV"
+            >
+              FSME
+            </a>
+            .
+          </li>
+          <li>Gaming - Extremely competitive.</li>
+          <li>
+            Reading - Non-fiction only, I love how books teach me different
+            forms of thought.
+          </li>
+          <li>Tweak my installation of Manjaro Linux (i3 is awesome!)</li>
+        </ul>
+      </div>
+
+      <div className="text-white bg-black">
+        <div className="container p-8 mx-auto text-center md:p-12">
+          <h2 className="text-3xl mb-3">Think I can fit your team?</h2>
+          <h3 className="text-xl">Please contact me:</h3>
+          <br />
+          <img className="inline-block" src="/mail.png" width="350" />
+        </div>
+      </div>
+    </main>
   )
 }
+
+export default Home
