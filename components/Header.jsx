@@ -5,7 +5,7 @@ const Header = () => {
         <div>
           <h1 className="text-2xl font-bold">Samuel Bran</h1>
         </div>
-        <nav className="text-right md:text-left">
+        <nav>
           <ul>
             <li>
               <a

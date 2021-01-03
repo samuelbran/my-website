@@ -5,7 +5,7 @@ const Home = () => {
     <main>
       <div className="container mx-auto">
         <div className="p-8 md:p-12">
-          <h2 className="text-3xl leading-10">
+          <h2 className="leading-7 md:text-3xl md:leading-10">
             Hi! I'm a{' '}
             <span className="px-2 bg-yellow-100">Front End Developer</span>{' '}
             based in El Salvador, I've been working in the web for more that 6
