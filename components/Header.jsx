@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <div className="container mx-auto">
-      <header className="grid grid-cols-2 gap-4 bg-gray-50 p-8">
+      <header className="grid md:grid-cols-2 gap-4 bg-gray-50 p-8">
         <div>
           <h1 className="text-2xl font-bold">Samuel Bran</h1>
         </div>
